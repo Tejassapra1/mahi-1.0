@@ -1,0 +1,15 @@
+import os
+
+image_names = [
+    "generated_rohit_sharma1.jpg",
+    "generated_rohit_sharma2.jpg",
+    "generated_rohit_sharma3.jpg",
+    "generated_rohit_sharma4.jpg"
+]
+
+for img in image_names:
+    img_path = os.path.join("Data", img)
+    if os.path.exists(img_path):
+        os.startfile(img_path)  # Opens with default viewer on Windows
+    else:
+        print(f"Unable to open {img_path}")
